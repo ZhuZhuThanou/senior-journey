@@ -1,0 +1,125 @@
+{
+  "header": "When to take your government pensions",
+  "overview": {
+    "header": "Overview",
+    "paragraph-1": "Paragraph 1: Overview of when to take your governmemt pensions:",
+    "list": {
+      "item-1": "Item 1 description",
+      "item-2": "Item 2 description",
+      "item-3": "Item 3 description"
+    },
+    "paragraph-2": "Paragraph 2: description",
+    "paragraph-3": {
+      "content": "To learn more  <a>A LINK</a>.",
+      "link": "https://google.com"
+    }
+  },
+  "section-1": {
+    "header": "Section 1 header",
+    "col-span-3": "col-span-3",
+    "col-span-2": "col-span-2", 
+    "col-span-1": "col-span-1",
+   
+    "col-1": {
+      "header": "Col-1 Header",
+      "paragraph-1": "Paragraph 1",
+      "paragraph-2": "Paragraph 2"
+    },
+    "col-2": {
+      "header": "Col-2 Header",
+      "paragraph-1": "Paragraph 1 ",
+      "paragraph-2": "Paragraph 2"
+    },
+    "col-3": {
+      "header": "Third Pillar",
+      "paragraph-1": "Paragraph 1",
+      "paragraph-2": "Paragraph 2",
+      "paragraph-3": "Paragraph 3"
+    }
+   
+  },
+
+  "section-2": {
+    "header": "Section 2 header",
+    "overview": "Section-2 overview paragraph ",
+    "paragraph-card": {
+      "header": "Paragraph card header",
+      "card": {
+        "header": "Card header",
+        "content": "Card content",
+        "learn-more": "Learn More"
+      },
+     
+      "paragraph-1": {
+        "content": "Paragraph 1 content.<br /><a>Lorem ipsum</a>.",
+        "link": "https://google.com"
+      },
+      "paragraph-2": {
+        "content": "Paragraph 2 content. <a>Link</a>",
+        "link": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-international.html"
+      },
+      "paragraph-3": {
+        "content": "Paragraph 3 <a>Link</a>.",
+        "link": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/benefit-amount.html"
+      },
+      "paragraph-4": {
+        "content":"Paragraph 4 lorem ipsum"
+      },
+      "paragraph-5": {
+        "content": "To learn more about section card, visit <a1>Link 1</a1>.<br /> There is also <a2>Link 2</a2>",
+        "link-1": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security.html",
+        "link-2": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/payments.html"
+      }
+    },
+    "important-notice": "<strong>Important:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fringilla sollicitudin purus. Pellentesque sit amet consequat urna. Morbi nec pharetra erat, finibus pulvinar enim."
+  },
+
+
+  "section-3": {
+    "header": "Section 3 header",
+    "overview": "Section 3 overview",
+    "card": {
+      "header": "Card header",
+      "content": "Card content",
+      "learn-more": "Learn More"
+    }
+    
+  },
+
+
+  
+  "section-4": {
+    "header": "Section 4 header",
+    "overview": "Section 4 overview",
+    
+    "sub-section-1": {
+      "header": "Sub-section 1 header",
+      "overview": "Sub-section 1 overview.",
+      "illustration": {
+        "alt": "image alt",
+        "img-url": "/assets/rrsp-en.svg"
+      },
+      "important-notice": "<strong>Important:</strong> subsection card" 
+    }
+  },
+  "learn-more": {
+    "canada-pension-plan-program": {
+      "description": "The official Canada.ca page of the CPP program with information on the CPP retirement pension, and other CPP related benefits.",
+      "header": "Canada Pension Plan (CPP) Program"
+    },
+    "header": "Learn More",
+    "old-age-security-program": {
+      "description": "The official Canada.ca page of the OAS program with information on the OAS retirement pension, and other OAS related benefits.",
+      "header": "Old Age Security Program"
+    },
+    "sources-of-retirement-income": {
+      "description": "Public pensions, OAS, CPP, employer pensions, RRSPs and other sources of personal savings.= from the Financial Consumer Agency of Canada",
+      "header": "Sources of retirement income"
+    },
+    "transitioning-from-work-to-retirement": {
+      "description": "You can take many different paths transitioning from work to retirement. Learn how you can better combine your income from job and pensions.",
+      "header": "Transitioning from work to retirement"
+    }
+  }
+
+}
