@@ -1,0 +1,7 @@
+{
+  "step-1": {
+    "body": "<p><strong>Lorem ipsum</strong> dolor sit amet, consectetur adipiscing elit. Etiam maximus laoreet justo, at blandit nisl efficitur eget. Nulla cursus gravida mauris, vitae iaculis justo commodo at. Nulla eget cursus mauris, sed pulvinar risus. Vestibulum fringilla, dolor nec convallis molestie, felis lacus volutpat justo, sit amet dictum lectus ligula vel dolor.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam maximus laoreet justo, at blandit nisl efficitur eget. Nulla cursus gravida mauris, vitae iaculis justo commodo at. Nulla eget cursus mauris, sed pulvinar risus. Vestibulum fringilla, dolor nec convallis molestie, felis lacus volutpat justo, sit amet dictum lectus ligula vel dolor.</p>",
+    "links": "Ontario<br/><ul class='list-disc list-inside pl-4'><li>Hello <a href='google.com'>Link here</a></li></ul>Newfoundland<br/><ul class='list-disc list-inside pl-4'><li>Hello <a href='google.com'>Link here</a></li></ul>",
+    "categories": "<button class='bg-gray-100 rounded-md px-4 py-2 border border-gray-200 hover:bg-gray-200 focus:outline-none focus:border-gray-300'>Time sensitive</button>"
+  } 
+}
