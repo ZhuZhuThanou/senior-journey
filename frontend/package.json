@@ -18,6 +18,8 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
     "@material-tailwind/react": "^1.4.2",
     "@opentelemetry/api": "^1.4.1",
     "@opentelemetry/exporter-metrics-otlp-proto": "^0.37.0",
@@ -40,6 +42,7 @@
     "react-i18next": "^12.2.0",
     "react-icons": "^4.8.0",
     "react-idle-timer": "^5.5.3",
+    "react-markdown": "^8.0.7",
     "sharp": "^0.32.0",
     "yup": "^1.0.2"
   },
