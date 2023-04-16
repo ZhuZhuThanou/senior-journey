@@ -3,11 +3,16 @@ import { FC, PropsWithChildren } from 'react'
 import { GetServerSideProps } from 'next'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import TaskCard, { Task } from '../../components/TaskCard' 
+import Layout from '../../components/Layout'
+import NestedAccordion from '../../components/NestedAccordion'
+import { Task } from '../../components/TaskCard'
+// import TaskCard from '../../components/TaskCard'
 
 const TaskListPrint: FC = () => {
 
   const { t } = useTranslation('quiz/task-list')
+  const resourcesTitle = t('section.resources.title')
+
   const section1Tasks: Task[] = t('section-1.tasks', { returnObjects: true })
   const section2Tasks: Task[] = t('section-2.tasks', { returnObjects: true })
   const section3Tasks: Task[] = t('section-3.tasks', { returnObjects: true })
@@ -18,41 +23,11 @@ const TaskListPrint: FC = () => {
   const section3FilteredTasks = section3Tasks.filter(task => filterIds.has(task.id))
 
   return (
-
-    <div className="mx-4">
-      {section1FilteredTasks.length > 0
-        && (<div className="pl-5 mb-4 mt-4">
-          <strong>{t('section-1.title')}</strong>
-          <hr className="mt-4" />
-        </div>)}
-      {section1FilteredTasks.map((task, index) => (
-        <TaskCard key={task.id} showCheckbox={true}
-          task={task}/>
-      ))}
-
-      {section2FilteredTasks.length > 0
-        && (<div className="pl-5 mb-4 mt-4">
-          <strong>{t('section-2.title')}</strong>
-          <hr className="mt-4" />
-        </div>)}
-
-      {section2FilteredTasks.map((task, index) => (
-        <TaskCard key={task.id} showCheckbox={true}
-          task={task} />
-      ))}
-
-      {section3FilteredTasks.length > 0
-        && (<div className="pl-5 mb-4 mt-4">
-          <strong>{t('section-3.title')}</strong>
-          <hr className="mt-4" />
-        </div>)}
-
-      {section3FilteredTasks.map((task, index) => (
-        <TaskCard key={task.id} showCheckbox={true}
-          task={task} />
-      ))}
-
-    </div>
+    <Layout>
+      <NestedAccordion sectionTitle={t('section-1.title')} tasks={section1FilteredTasks} />
+      <NestedAccordion sectionTitle={t('section-2.title')} tasks={section2FilteredTasks} />
+      <NestedAccordion sectionTitle={t('section-3.title')} tasks={section2FilteredTasks} />
+    </Layout>
   )
 }
 
