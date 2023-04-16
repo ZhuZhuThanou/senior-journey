@@ -1,0 +1,14 @@
+{
+    "section": {
+        "resource": {
+            "title": "More resources"
+        }
+    },
+    "tasks": [
+        {
+            "id": "1",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam maximus laoreet justo, at blandit nisl efficitur eget. Nulla cursus gravida mauris.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam maximus laoreet justo, at blandit nisl efficitur eget. Nulla cursus gravida mauris.",
+            "links": "Item a:\n* Looking for this [see more](https://google.com)\n\nItem b:\n* Learn about [link](https://google.com)"
+        }
+    ]
+}
