@@ -62,7 +62,7 @@ const NestedAccordion: React.FC<NestedAccordionProps> = ({ sectionTitle, tasks =
     return (
         <Accordion sectionTitle={sectionTitle}>
             {tasks.map((task, index) => (
-                <div className="mt-4">
+                <div className="mt-4" key={index}>
                     <AccordionInside key={index} {...task} />
                 </div>
             ))}
