@@ -11,8 +11,7 @@ import { Task } from '../../components/TaskCard'
 const TaskListPrint: FC = () => {
 
   const { t } = useTranslation('quiz/task-list')
-  const resourcesTitle = t('section.resources.title')
-
+  
   const section1Tasks: Task[] = t('section-1.tasks', { returnObjects: true })
   const section2Tasks: Task[] = t('section-2.tasks', { returnObjects: true })
   const section3Tasks: Task[] = t('section-3.tasks', { returnObjects: true })
@@ -26,7 +25,7 @@ const TaskListPrint: FC = () => {
     <Layout>
       <NestedAccordion sectionTitle={t('section-1.title')} tasks={section1FilteredTasks} />
       <NestedAccordion sectionTitle={t('section-2.title')} tasks={section2FilteredTasks} />
-      <NestedAccordion sectionTitle={t('section-3.title')} tasks={section2FilteredTasks} />
+      <NestedAccordion sectionTitle={t('section-3.title')} tasks={section3FilteredTasks} />
     </Layout>
   )
 }
