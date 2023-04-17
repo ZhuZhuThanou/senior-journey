@@ -1,4 +1,4 @@
-import { FC, PropsWithChildren } from 'react'
+import { FC } from 'react'
 
 import { GetServerSideProps } from 'next'
 import { useTranslation } from 'next-i18next'

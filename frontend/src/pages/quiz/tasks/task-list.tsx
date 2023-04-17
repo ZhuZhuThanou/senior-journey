@@ -1,16 +1,16 @@
-import { FC, PropsWithChildren } from 'react'
+import { FC } from 'react'
 
 import { GetServerSideProps } from 'next'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import Layout from '../../components/Layout'
-import NestedAccordion from '../../components/NestedAccordion'
-import { Task } from '../../components/TaskCard'
-// import TaskCard from '../../components/TaskCard'
+import Layout from '../../../components/Layout'
+import NestedAccordion from '../../../components/NestedAccordion'
+import { Task } from '../../../components/TaskCard'
+
 
 const TaskListPrint: FC = () => {
 
-  const { t } = useTranslation('quiz/task-list')
+  const { t } = useTranslation('quiz/tasks/task-list')
   
   const section1Tasks: Task[] = t('section-1.tasks', { returnObjects: true })
   const section2Tasks: Task[] = t('section-2.tasks', { returnObjects: true })
@@ -34,7 +34,7 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => ({
   props: {
     ...(await serverSideTranslations(locale ?? 'default', [
       'common',
-      'quiz/task-list'
+      'quiz/tasks/task-list'
     ])),
   },
 })
