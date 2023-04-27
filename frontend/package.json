@@ -24,6 +24,8 @@
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@material-tailwind/react": "^1.4.2",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.12.2",
     "@opentelemetry/api": "^1.4.1",
     "@opentelemetry/exporter-metrics-otlp-proto": "^0.37.0",
     "@opentelemetry/exporter-trace-otlp-proto": "^0.37.0",

@@ -1,4 +1,5 @@
 import { FC, PropsWithChildren } from 'react'
+import { Visibility as VisibilityIcon, Star as StarIcon } from '@mui/icons-material';
 
 import { GetServerSideProps } from 'next'
 import { Trans, useTranslation } from 'next-i18next'
@@ -11,7 +12,30 @@ import Layout from '../../components/Layout'
 
 export interface ImportantCardProps extends PropsWithChildren {}
 const ImportantCard: FC<ImportantCardProps> = ({ children }) => (
-  <p className="rounded-lg bg-[#fba575]/[.3] p-5">{children}</p>
+  <div className="rounded-lg overflow-hidden relative">
+    <div className="grid lg:grid-cols-12 sm:grid-cols-1">
+      <div className="bg-[#3B4CDE] lg:col-span-1 lg:w-auto sm:w-full p-3 z-10 relative flex items-center justify-center  ">
+        <div className="mx-auto">
+          <VisibilityIcon className="text-white transform scale-125" />
+        </div>
+      </div>
+      <div className="bg-[#D6F2FE] lg:col-span-11 p-5">{children}</div>
+    </div>
+  </div>
+)
+
+export interface TipCardProps extends PropsWithChildren {}
+const TipCard: FC<TipCardProps> = ({ children }) => (
+  <div className="rounded-lg overflow-hidden relative">
+    <div className="grid lg:grid-cols-12 sm:grid-cols-1">
+      <div className="bg-[#96DE3B] lg:col-span-1 lg:w-auto sm:w-full p-3 z-10 relative flex items-center justify-center">
+        <div className="mx-auto">
+          <StarIcon className="text-white transform scale-125" />
+        </div>
+      </div>
+      <div className="bg-[#D7FED6] lg:col-span-11 p-5">{children}</div>
+    </div>
+  </div>
 )
 
 const WhenToTakeYourGovernmentPensions: FC = () => {
@@ -200,6 +224,15 @@ const WhenToTakeYourGovernmentPensions: FC = () => {
           i18nKey="section-2.important-notice"
         />
       </ImportantCard>
+
+      <br/>
+
+      <TipCard>
+        <Trans
+          ns="learn/content-template"
+          i18nKey="section-2.important-notice"
+        />
+      </TipCard>
 
       <h2 id="section-3" className="h2">
         {t('section-3.header')}
