@@ -9,12 +9,13 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import Layout from '../../components/Layout'
+import AlertCard from '../../components/AlertCard'
 
 export interface ImportantCardProps extends PropsWithChildren {}
 const ImportantCard: FC<ImportantCardProps> = ({ children }) => (
   <div className="rounded-lg overflow-hidden relative">
     <div className="grid lg:grid-cols-12 sm:grid-cols-1">
-      <div className="bg-[#3B4CDE] lg:col-span-1 lg:w-auto sm:w-full p-3 z-10 relative flex items-center justify-center  ">
+      <div className="bg-[#3B4CDE] lg:col-span-1 p-4 z-10 relative lg:flex sm:ps-4 lg:items-center lg:justify-left ">
         <div className="mx-auto">
           <VisibilityIcon className="text-white transform scale-125" />
         </div>
@@ -28,7 +29,7 @@ export interface TipCardProps extends PropsWithChildren {}
 const TipCard: FC<TipCardProps> = ({ children }) => (
   <div className="rounded-lg overflow-hidden relative">
     <div className="grid lg:grid-cols-12 sm:grid-cols-1">
-      <div className="bg-[#96DE3B] lg:col-span-1 lg:w-auto sm:w-full p-3 z-10 relative flex items-center justify-center">
+      <div className="bg-[#96DE3B] lg:col-span-1 p-4 z-10 relative lg:flex sm:ps-4 lg:items-center lg:justify-left ">
         <div className="mx-auto">
           <StarIcon className="text-white transform scale-125" />
         </div>
@@ -42,6 +43,7 @@ const WhenToTakeYourGovernmentPensions: FC = () => {
   const { t } = useTranslation('learn/content-template')
   return (
     <Layout>
+
       <NextSeo title={t('header')} />
       <h1 className="mb-10 rounded-3xl bg-[#212121]/[.08] px-4 py-6 font-display text-4xl font-medium text-primary-700 md:mb-12 md:px-24 md:py-16 md:text-5xl md:font-bold">
         {t('header')}
@@ -233,6 +235,13 @@ const WhenToTakeYourGovernmentPensions: FC = () => {
           i18nKey="section-2.important-notice"
         />
       </TipCard>
+
+      <AlertCard type="tip">
+        <Trans
+          ns="learn/content-template"
+          i18nKey="section-2.important-notice"
+        />
+      </AlertCard>
 
       <h2 id="section-3" className="h2">
         {t('section-3.header')}
