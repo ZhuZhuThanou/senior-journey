@@ -101,3 +101,4 @@ $RECYCLE.BIN/
 #
 **/tmp/
 **/cypress/results/
+*.pdf
